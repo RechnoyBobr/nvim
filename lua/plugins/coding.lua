@@ -1,9 +1,7 @@
 return {
-<<<<<<< HEAD
   "smjonas/inc-rename.nvim",
   cmd = "IncRename",
   config = true,
-=======
   { "smjonas/inc-rename.nvim", cmd = "IncRename", config = true },
   { "kaarmu/typst.vim", ft = "typst", lazy = false },
   {
@@ -14,5 +12,4 @@ return {
       require("typst-preview").update()
     end,
   },
->>>>>>> 8bac8dc (Typst upgrade)
 }
