@@ -3,6 +3,7 @@ return {
   version = false, -- last release is way too old
   event = "InsertEnter",
   dependencies = {
+    { "folke/neoconf.nvim", cmd = "Neoconf", config = true },
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-path",
