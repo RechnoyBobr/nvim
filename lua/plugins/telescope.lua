@@ -5,7 +5,7 @@ return {
   },
   keys = {
     {
-      "<leader>fP",
+      "\\P",
       function()
         require("telescope.builtin").find_files({
           cwd = require("lazy.core.config").options.root,
@@ -15,6 +15,7 @@ return {
     },
     {
       "\\f",
+      desc = "Telescope find files",
       function()
         local builtin = require("telescope.builtin")
         builtin.find_files({
@@ -25,6 +26,7 @@ return {
     },
     {
       "\\r",
+      desc = "live grep",
       function()
         local builtin = require("telescope.builtin")
         builtin.live_grep()
@@ -32,6 +34,7 @@ return {
     },
     {
       "\\\\",
+      desc = "Telescope buffers",
       function()
         local builtin = require("telescope.builtin")
         builtin.buffers()
@@ -39,6 +42,7 @@ return {
     },
     {
       "\\t",
+      desc = "Open help tags",
       function()
         local builtin = require("telescope.builtin")
         builtin.help_tags()
@@ -46,6 +50,7 @@ return {
     },
     {
       "\\[",
+      desc = "Telescope resume",
       function()
         local builtin = require("telescope.builtin")
         builtin.resume()
@@ -53,6 +58,7 @@ return {
     },
     {
       "\\e",
+      desc = "Telescope diagnostic",
       function()
         local builtin = require("telescope.builtin")
         builtin.diagnostics()
@@ -60,6 +66,7 @@ return {
     },
     {
       "\\s",
+      desc = "Telescope treesitter",
       function()
         local builtin = require("telescope.builtin")
         builtin.treesitter()
