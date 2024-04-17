@@ -2,6 +2,7 @@ return {
   "telescope.nvim",
   dependencies = {
     "nvim-telescope/telescope-file-browser.nvim",
+    "nvim-telescope/telescope-project.nvim",
   },
   keys = {
     {
@@ -115,7 +116,18 @@ return {
         },
       },
     }
+    local project_actions = require("telescope._extensions.project.actions")
     opts.extensions = {
+      project = {
+        base_dirs = {
+          "~/Asm/",
+          "~/rust_tg_bot/",
+          "/mnt/c/Users/Ilya/Desktop/Typst/",
+        },
+        hidden_files = true,
+        theme = "dropdown",
+        sync_with_nvim_tree = true,
+      },
       theme = "dropdown",
       hijack_netrw = true,
       mappings = {

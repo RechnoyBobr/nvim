@@ -30,3 +30,9 @@ keymap.set("i", "<Tab>", "<Nop>")
 keymap.set("", "<C-j>", function()
   vim.diagnostic.goto_next()
 end, opts)
+keymap.set(
+  "n",
+  "<leader>p",
+  ":lua require('telescope').extensions.project.project{}<CR>",
+  { desc = "Telescope projects" }
+)
