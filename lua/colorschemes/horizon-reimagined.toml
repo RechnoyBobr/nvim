@@ -1,3 +1,18 @@
 [information]
 name = "horizon-reimagined"
 background = "dark"
+author = "BeaverWorks"
+
+[palette]
+blue = 
+green = 
+cyan = 
+orange = 
+yellow = 
+purple = 
+magenta = 
+bg = "#B7B7B8"
+fg = "#1D1F27"
+white = "#7E8082"
+red = "#A7445E"
+gray = "#AEA0A3"
