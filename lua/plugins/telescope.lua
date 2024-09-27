@@ -120,10 +120,10 @@ return {
         opts.extensions = {
             project = {
                 base_dirs = {
-                    "~/Asm/",
-                    "~/rust_tg_bot/",
-                    "/mnt/c/Users/Ilya/Desktop/Typst/",
+                    "~/OS-course/",
                     "~/.config/nvim/",
+                    "~/hse-cpp-course/",
+                    "~/backend_academy_2024_project_1-java-RechnoyBobr/",
                 },
                 hidden_files = true,
                 theme = "dropdown",

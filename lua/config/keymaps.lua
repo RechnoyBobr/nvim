@@ -27,12 +27,15 @@ keymap.set("n", "sk", "<C-w>k")
 keymap.set("n", "sj", "<C-w>j")
 keymap.set("n", "sl", "<C-w>l")
 keymap.set("i", "<Tab>", "<Nop>")
+keymap.set("i", "<F8>", "<cmd>DapStepInto<CR>")
+keymap.set("i", "<F9>", "<cmd>DapStepOver<CR>")
+keymap.set("i", "<F10>", "<cmd>DapStepOut<CR>")
 keymap.set("", "<C-j>", function()
-  vim.diagnostic.goto_next()
+    vim.diagnostic.goto_next()
 end, opts)
 keymap.set(
-  "n",
-  "<leader>p",
-  ":lua require('telescope').extensions.project.project{}<CR>",
-  { desc = "Telescope projects" }
+    "n",
+    "<leader>p",
+    ":lua require('telescope').extensions.project.project{}<CR>",
+    { desc = "Telescope projects" }
 )
