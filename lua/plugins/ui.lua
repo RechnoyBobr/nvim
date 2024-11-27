@@ -3,6 +3,9 @@ return {
         "xiyaowong/transparent.nvim",
     },
     { "sho-87/kanagawa-paper.nvim" },
+    { "sainnhe/gruvbox-material" },
+    { "zenbones-theme/zenbones.nvim", dependencies = "rktjmp/lush.nvim", lazy = false, priority = 1000 },
+    { "nyoom-engineering/oxocarbon.nvim" },
     {
         "folke/noice.nvim",
         opts = function(_, opts)
